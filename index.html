@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Line Days</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <script src="script.js" defer></script>
+    <meta name="theme-color" content="#e63946" />
+</head>
+
+<body>
+    <div class="container">
+        <header id="app-header">
+            <h3>Grand Line Days</h3>
+            <p class="tagline">Your journey on the Grand Line of sobriety</p>
+        </header>
+
+        <blockquote id="quote-box">"As long as I live, there are infinite chances!" - Luffy</blockquote>
+
+        <main id="main-container">
+            <section class="date-setup">
+                <div class="form-row">
+                    <label for="date-picker">Pick your sober start date:</label>
+                </div>
+                <div class="form-row">
+                    <input type="date" id="date-picker" />
+                </div>
+                <div class="form-row">
+                    <button id="save-date-btn">Set Date</button>
+                </div>
+            </section>
+
+            <section class="counter hidden">
+                <div class="form-row">
+                    <p class="label">Sober Since: <span id="start-date" class="value"></span></p>
+                </div>
+                <div class="form-row">
+                    <p class="label">Days: <span id="day-count" class="value">0</span></p>
+                </div>
+                <div class="form-row">
+                    <button id="reset-date-btn">Reset Date</button>
+                </div>
+            </section>
+
+            <section class="reset-msg-container hidden">
+                <div class="reset-msg-box">
+                    <p class="reset-msg">You are so close to claiming the One Piece.</p>
+                    <p class="reset-msg">Do you really wanna go back to East Blue?</p>
+                    <div class="reset-buttons">
+                        <button class="cancel-btn">Keep Sailing!</button>
+                        <button class="confirm-btn">Start Over!</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="app-footer">
+            <p>© 2025 <a href="https://github.com/Imissh3r" target="_blank" rel="noopener noreferrer">Captain Sree</a> |
+                Built with ❤️ for nakamas</p>
+        </footer>
+    </div>
+</body>
+
+</html>
